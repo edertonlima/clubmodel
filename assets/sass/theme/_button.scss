@@ -1,0 +1,44 @@
+button, .button {
+	width: auto;
+	display: inline-block;
+	height: 55px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 1.125rem;
+	color: $pink;
+	border: 2px solid $pink;
+	padding: 0 40px;
+	border-radius: 5px;
+	text-decoration: none;
+	cursor: pointer;
+	@include animacao;
+
+	&:hover {
+		background-color: $pink;
+		color: #ffffff;
+		text-decoration: none;
+	}
+
+	&.btn-news {
+		border-color: #ffffff;
+		background-color: #ffffff;
+		color: #151515;
+		border-radius: 0 5px 5px 0;
+		padding: 0 10px;
+		position: absolute;
+		right: 0;
+		top: 0px;
+
+		&:hover {
+			border-color: $pink;
+			background-color: $pink;
+			color: #ffffff;
+		}
+	}
+
+	&.mais-acompanhantes {
+		margin: 40px auto 0;
+		width: 335px;
+		display: block;
+	}
+}

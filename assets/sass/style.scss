@@ -1,0 +1,18 @@
+@import 'bootstrap';
+
+@import 'theme/_mixin';
+@import 'theme/_reset';
+@import 'theme/_variaveis';
+@import 'theme/_fonts';
+@import 'theme/_estrutura';
+@import 'theme/_elementos';
+@import 'theme/_form';
+@import 'theme/_nav';
+@import 'theme/_button';
+@import 'theme/_slide';
+@import 'theme/_header';
+@import 'theme/_footer';
+@import 'theme/_blocos';
+
+// pages
+@import 'theme/pages/_home';

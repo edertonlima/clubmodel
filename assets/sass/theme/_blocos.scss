@@ -1,0 +1,143 @@
+.box-assine {
+	background-size: cover;
+	background-position: left center;
+	background-repeat: no-repeat;
+
+	.container {
+		height: 400px;
+	}
+
+	.assine-ja {
+		width: 100%;
+		max-width: 440px;
+		margin-top: 40px;
+		float: right;
+		text-align: center;
+
+		p {
+			display: block;
+			margin: 10px 0 20px;
+		}
+	}
+}
+
+
+.box-action {
+	.news, .club-model {
+		background-color: #151515;
+		padding: 80px 50px;
+		text-align: center;
+		border-radius: 5px;
+
+		p {
+			display: block;
+			margin: 10px 0 20px;
+		}
+	}
+
+	.news {
+		form {
+			position: relative;
+		}
+	}
+}
+
+.grid {
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	.grid-sizer, .grid-item {
+		width: 25%;
+		padding: 10px;
+		@include box-sizing;
+	}
+
+	.grid-item {
+		float: left;
+
+		img {
+			display: block;
+			max-width: 100%;
+			width: 100%;
+		}
+
+		&.destaque {
+			width: 50%;
+		}
+	}
+}
+
+.twitter {
+	.twitter {
+		margin-top: 25px;
+	}
+
+	.twitter-bg {
+		padding: 0px 60px;
+	}
+
+	.item {
+		padding: 20px;
+		border-radius: 5px;
+		border: 1px solid #ffffff;
+
+		header {
+			margin-bottom: 30px;
+			position: relative;
+
+			strong {
+				display: block;
+				font-size: 1rem;
+				line-height: 1rem;
+				color: #ffffff;
+			}
+
+			a {
+				text-decoration: none;
+				font-size: 1rem;
+				font-weight: $light;
+				color: #ffffff;
+
+				&.ico-twitter {
+					position: absolute;
+					top: 0px;
+					right: 0px;
+
+					.fa {
+						color: #ffffff;
+						font-size: 2rem;
+						font-weight: $regular;
+					}
+				}
+
+				&:hover {
+					color: #ffffff;
+					text-decoration: none;
+				}
+			}
+		}
+
+		footer {
+			display: block;
+			width: 100%;
+			margin-top: 30px;
+			height: 15px;
+
+			.fa, .date {
+				color: #ffffff;
+			}
+			.fa {
+				float: left;
+				margin-right: 10px;
+			}
+			.date {
+				float: right;
+				font-size: .812rem;
+				line-height: 15px;
+			}
+		}
+	}
+}

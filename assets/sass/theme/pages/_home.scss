@@ -1,0 +1,135 @@
+.as-mais-do-club {
+
+	&:not(.nossas-acompanhantes){
+		padding-bottom: 0px;
+	}
+	
+	.as-mais-itens {
+
+		&:not(.club) {
+			margin-top: 50px;
+		}
+
+		.item{
+			background-color: $gray;
+			border-right: 1px solid $grayDark;
+			position: relative;
+
+			img.novidade {
+				position: absolute; 
+				top: 0px;
+				right: 0px;
+				width: 50%;
+				max-width: 82px;
+				min-width: 50px;
+				z-index: 999;
+			}
+
+			span.title {
+				@include transition(ease all 300ms);
+				@include opacity(1);
+				position: absolute;
+				bottom: 0px;
+				left: 0px;
+				width: 100%;
+				display: block;
+				background-color: $gray;
+				padding: 10px 0px;
+				margin: 0px;
+				text-align: center;
+				@include text(null, 15px, $white, 600, uppercase);
+			}
+			.overlay{
+				@include transition(ease all 300ms);
+				background-color: rgba(red($black), green($black), blue($black), .8);
+				@include opacity(0);
+				position: absolute;
+				top: 0px;
+				bottom: 0px;
+				left: 0px;
+				right: 0px;
+				padding: 165px 0px;
+				text-align: center;
+
+				.see-more{
+					display: table;
+					margin: 0 auto;
+					padding: 7px 9px;
+					border-radius: 4px;
+					background-color: $black;
+					@include text(null, 14px, $white, 700, uppercase);
+					text-align: center;
+				}
+				.title{
+					@include text(null, 18px, $white, 700, uppercase);
+					margin-bottom: 0px;
+				}
+				.local{
+					@include text(null, 14px, $white, 400);
+				}
+				.rating{
+					font-size: 24px;
+					color: $white;
+					padding: 10px 0px;
+					display: table;
+					margin: 0 auto;
+					.fa{
+						margin: 0px 1px;
+					}
+				}
+				.gift{
+					@include bgimg(null, 'icon-gift.png');
+					display: inline-block;
+					width: 39px;
+					height: 31px;
+					margin: 0px 3px;
+				}
+				.add-fav{
+					font-size: 31px;
+					color: $pink;
+					margin: 0px 3px;
+				}
+			}
+
+			&:hover{
+				span.title{
+					@include transition(ease all 300ms);
+					@include opacity(0);
+					opacity: 0;
+				}
+				.overlay{
+					@include transition(ease all 300ms);
+					opacity: 1;
+				}
+			}
+
+			&.menu-club {
+				cursor: pointer;
+
+				img:not(.novidade) {
+					@include grayscale(100%);
+					@include animacao;
+				}
+
+				.title {
+					@include animacao;
+				}
+
+				&:hover {
+					img {
+						@include grayscale(0%);
+					}
+					.title {
+						opacity: 1;
+						background-color: $pink;
+						color: #ffffff;
+					}
+				}
+			}
+		}
+	}
+
+	&.menu-club {
+		padding: 0px 60px;
+	}	
+}

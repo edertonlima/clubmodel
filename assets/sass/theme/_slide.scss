@@ -1,0 +1,45 @@
+.owl-carousel {
+	position: relative;
+
+	.owl-nav {
+		position: absolute;
+		top: 50%;
+		height: 0;
+		width: 100%;
+
+		.owl-prev, .owl-next {
+			position: absolute;
+			margin-top: -20px;
+			font-size: 2rem;
+			line-height: 2rem;
+			@include animacao;
+
+			.fa {
+				color: #ffffff;
+				@include animacao;
+			}
+
+			&.disabled {
+				opacity: .1!important;
+
+				.fa {
+					color: #ffffff!important;
+				}
+			}
+
+			&:hover {
+				.fa {
+					color: $pink;
+				}
+			}
+		}
+
+		.owl-prev {
+			left: -45px;
+		}
+
+		.owl-next {
+			right: -45px;
+		}
+	}
+}

@@ -1,0 +1,107 @@
+.footer {
+	background-color: $gray;
+	padding: 40px 0px;
+
+	.logo-footer {
+		width: 150px;
+		float: left;
+		margin: 0px auto;
+		padding-right: 140px;
+
+		img {
+			vertical-align: top;
+			display: block;
+		}
+	}
+
+	nav {
+		float: right;
+
+		ul:not(.redes-sociais) {
+			margin: 0 auto;
+			border-left: 1px solid $grayLighter;
+			padding: 0px 50px 0px;
+			float: none;
+			display: table-cell;
+			height: 100%;
+			vertical-align: top;
+
+			&:first-child {
+				border-left: 0px;
+				padding-left: 0px;
+			}
+
+			li {
+				padding: 5px 0px;
+				opacity: .75;
+
+				a {
+					font-size: .875rem;
+					color: #ffffff;
+					font-weight: $light;
+
+					.fa {
+						margin-right: 10px;
+						color: #ffffff;
+						font-size: .75rem;
+					}
+				}
+			}
+		}
+
+		.ico-footer {
+			display: table-cell;
+			height: 100%;
+			vertical-align: top;
+			padding-left: 50px;
+			padding-top: 20px;
+
+			img {
+				display: block;
+				margin-bottom: 15px;
+			}
+
+			ul {
+				text-align: center;
+				@include clear; 
+
+				li {
+					display: inline;
+
+					.fa {
+						color: #747474;
+						font-size: .875rem;
+						border: 1px solid #747474;
+						border-radius: 50%;
+						width: 32px;
+						height: 32px;
+						line-height: 32px;
+						text-align: center;
+						margin: 0 3px;
+						font-weight: $light;
+					}
+				}
+			}
+		}	
+	}
+}
+
+.copy {
+	height: 50px;
+	line-height: 50px;
+
+	p {
+		float: left;
+		color: #ffffff;
+		font-family: $font-family2;
+		font-weight: $light;
+		font-size: .687rem;
+		text-transform: uppercase;
+		line-height: 50px;
+	}
+
+	a {
+		float: right;
+		margin-top: 7px;
+	}
+}

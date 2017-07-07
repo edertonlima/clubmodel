@@ -1,0 +1,88 @@
+form {
+	width: 100%;
+	@include clear();
+
+	input, textarea {
+		width: 100%;
+		padding: 0 10px;
+		@include box-sizing();
+	}
+
+	label {
+		&[for='mensagem'] {
+			opacity: 0.6;
+		}
+	}
+
+	input[type='text'] {
+		display: inline-block;
+		height: 55px;
+		line-height: 50px;
+		font-size: 1.125rem;
+		color: $pink;
+		border: 2px solid $pink;
+		border-radius: 5px;
+
+		&.input-news {
+			background: transparent;
+			border-color: #ffffff;
+			border-right-width: 53px;
+			color: #ffffff;
+			padding: 0 20px;
+		}
+	}
+
+	textarea {
+		@include box-sizing();
+	}
+}
+
+.select {
+	overflow: hidden;
+	background-color: #e6e7e8;
+	line-height: 44px;
+	height: 40px;
+	padding: 0 0 0 10px;
+	margin-bottom: 20px;
+	display: block;
+	position: relative;
+	@include box-sizing();
+
+	select {
+		width: 88%;
+		padding-right: 135px;
+		background-color: transparent;
+		font-weight: $regular;
+		font-size: 1.125rem;
+		color: $roxo;
+		box-sizing: content-box;
+		position: relative;
+		z-index: 99;
+		cursor: pointer;
+	}
+
+	&:after {
+		content: "\f107";
+		position: absolute;
+		right: 13px;
+		top: 12px;
+		font: normal normal normal 46px/1 FontAwesome;
+		cursor: pointer;
+		height: 15px;
+		line-height: 15px;
+		z-index: 0;
+	}
+}
+
+::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder {  
+	opacity: 1;
+	color: $verde;
+	font-weight: $light;
+	line-height: 35px;
+	font-size: 1.5rem; 
+}
+
+.msg-form {
+	text-align: center;
+	font-size: 1rem;
+}
