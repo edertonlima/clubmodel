@@ -1,0 +1,242 @@
+@media (min-width: $screen-xs-min) {
+  .pages{
+    .page-header{
+      @include bgimg($gray, 'pages-header.png', null, null, top center);
+      text-align: center;
+      margin: 0px 0px 0px;
+      border: 0px;
+      padding: 100px 0px 39px;
+      .icon-header{
+	display: table;
+	margin: 0 auto;
+      }
+      .breadcrumb{
+	background-color: transparent;
+	display: table;
+	margin: 0 auto;
+	> li + li:before{
+	  content: "";
+	  padding: 0px;
+	}
+	li{
+	  &.active{
+	    @include text(null, 14px, $white, 300);
+	  }
+	  a{
+	    @include text(null, 14px, $grayLight, 300);
+	  }
+	  .fa{
+	    color: $white;
+	    padding: 0px 7px;
+	  }
+	}
+      }
+      p{
+	display: table;
+	margin: 0 auto;
+	max-width: 500px;
+	padding: 0px 15px;
+	@include text(null, 14px, $white, 300, null, 214%);
+      }
+    }  
+    .main-page{
+      @include bgimg($grayDark, 'pages-main.png', null, null, center center);
+      background-color: $grayDark;
+      padding-bottom: 30px;
+      nav{
+	@include clearfix;
+	padding-bottom: 30px;
+	ul{
+	  li{
+	    padding: 0px 0px 5px;
+	    &.active{
+	      a{
+		background-color: $pink;
+		color: $white;
+		border-color: $pink;
+		&:hover{
+		  color: $white;
+		  font-weight: 300;
+		}
+	      }
+	    }
+	    a{
+	      @include transition(ease all 300ms);
+	      @include text(null, 17px, $white, 300, uppercase);
+	      text-align: center;
+	      display: block;
+	      padding: 10px 0px;
+	      background-color: $gray;
+	      border-bottom: 3px solid $gray;
+	      &:hover{
+		@include transition(ease all 300ms);
+		border-color: $pink;
+		color: $pink;
+		font-weight: 400;
+		text-decoration: none;
+	      }
+	    }
+	  }
+	}
+      } 
+      .container{
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	.row {
+	  margin-left: -10px;
+	  margin-right: -10px;
+	  &:before{}
+	  &:after{}
+	  p{
+	    @include text(null, 16px, $white, 400, null, 188%);
+	    text-align: center;
+	    margin-bottom: 30px;
+	  }
+	}
+      }
+    }
+    .panel-group{
+      .panel{
+	border: 0px;
+	border-radius: 2px;
+      }
+      .panel-heading{
+	background-color: $gray;
+	padding: 20px;
+	&.opened{
+	  background-color: $pink;
+	  a{
+	    span{
+	      color: $white;
+	    }
+	  }
+	}
+	a{
+	  @include clearfix;
+	  @include text(null, 15px, $white, 300);
+	  span{
+	    float: left;
+	    width: 90%;
+	  }
+	  .fa{
+	    float: right;
+	    color: $gray;
+	    background-color: $white;
+	    border-radius: 50%;
+	    width: 23px;
+	    height: 23px;
+	    text-align: center;
+	    font-size: 19px;
+	    &.fa-angle-down{
+	      padding: 3px;
+	    }
+	    &.fa-angle-up{
+	      padding: 1px;
+	    }
+	  }
+	}
+      }
+    }
+    .fale-conosco{
+      .title-styled{
+	@include text('Great Vibes', 40px, $pink);
+	text-align: center;
+	margin: 0px 0px 10px;
+      }
+      .form-group{
+	margin: 0px;
+      }
+      .form-control{
+	@include text(null, 18px, $white, 300);
+	@include placeholder($white);
+	border: 2px solid $white;
+	background-color: transparent;
+	padding: 10px 20px;
+	margin-bottom: 15px;
+      }
+      textarea.form-control{
+	height: 150px;
+	margin-bottom: 5px;
+      }
+      .btn-submit{
+	@include text(null, 18px, $white, 300, uppercase);
+	float: right;
+	background-color: transparent;
+	.fa{
+	  color: $white;
+	  margin-left: 10px;
+	}
+      }
+      p{
+	@include text(null, 16px, $white, 400, null, 188%);
+	text-align: left !important;
+      }
+    }
+  }
+}
+@media (min-width: $screen-sm-min) {
+  .pages{
+    .page-header{
+      margin-bottom: 70px;
+    }
+    .main-page{
+      nav{
+	ul{
+	  li{
+	    float: left;
+	    display: table;
+	    $width: 100%;
+	    width: $width / 5;
+	    padding-left: 5px;
+	    &:first-child{
+	      padding-left: 0px;
+	    }
+	    a{
+	      font-size: 15px;
+	      padding: 10px 10px;
+	      display: table-cell;
+	      height: 60px;
+	      vertical-align: middle;
+	      width: 100%;
+	    }
+	  }
+	}
+      }
+    }
+    .fale-conosco{
+      .title-styled{
+	font-size: 55px;
+	text-align: left;
+	margin: 0px 0px 0px;
+      }
+    }
+  }
+}
+@media (min-width: $screen-md-min) {
+}
+@media (min-width: $screen-lg-min) {
+  .pages{
+    .main-page{
+      padding-bottom: 100px;
+      nav{
+	padding-bottom: 100px;
+	ul{
+	  li{
+	    a{
+	      height: 80px;
+	    }
+	  }
+	}
+      }
+    }
+    .fale-conosco{
+      .title-styled{
+	font-size: 70px;
+	text-align: left;
+	margin: 0px 0px 0px;
+      }
+    }
+  }
+}

@@ -10,7 +10,7 @@
 	
 	<div class="owl-carousel owl-theme club as-mais-itens">
 		<?php for($i=1; $i<9; $i++){ ?>
-		<a href="#">
+		<a href="<?php echo $url; ?>/perfil">
 			<article class="item menu-club">
 				<img src="assets/images/novidade.png" class="novidade" alt="" />
 				<img src="uploads/destaques-0<?php echo $i; ?>.png" class="img-responsive" alt=""/>
@@ -31,12 +31,12 @@
 			<div class="grid-sizer"></div>
 			<div class="grid-item destaque">
 				<div class="as-mais as-mais-itens">
-					<a href="#">
+					
 						<article class="item">
 							<img src="uploads/acompanhantes-01.png" class="img-responsive" alt=""/>
 							<span class="title">Bruna Blanco</span>
 							<div id="" class="overlay">
-								<a href="#" class="see-more">Ver mais</a>
+								<a href="<?php echo $url; ?>/perfil" class="see-more">Ver mais</a>
 								<h2 class="title">Bruna Blanco</h2>
 								<span class="local">Moema - São Paulo</span>
 								<span class="rating clearfix">
@@ -47,23 +47,23 @@
 									<i class="fa fa-star-half" aria-hidden="true"></i>
 								</span>
 								<div id="" class="clearfix">
-									<a href="#" class="gift"></a>
-									<a href="#" class="add-fav"><i class="fa fa-star" aria-hidden="true"></i></a>
+									<a href="<?php echo $url; ?>" class="gift"></a>
+									<a href="<?php echo $url; ?>" class="add-fav"><i class="fa fa-star" aria-hidden="true"></i></a>
 								</div>
 							</div>
 						</article>
-					</a>
+					
 				</div>
 			</div>
 
 			<div class="grid-item destaque">
 				<div class="as-mais as-mais-itens">
-					<a href="#">
+					
 						<article class="item">
 							<img src="uploads/acompanhantes-02.png" class="img-responsive" alt=""/>
 							<span class="title">Bruna Blanco</span>
 							<div id="" class="overlay">
-								<a href="#" class="see-more">Ver mais</a>
+								<a href="<?php echo $url; ?>/perfil" class="see-more">Ver mais</a>
 								<h2 class="title">Bruna Blanco</h2>
 								<span class="local">Moema - São Paulo</span>
 								<span class="rating clearfix">
@@ -74,19 +74,19 @@
 									<i class="fa fa-star-half" aria-hidden="true"></i>
 								</span>
 								<div id="" class="clearfix">
-									<a href="#" class="gift"></a>
-									<a href="#" class="add-fav"><i class="fa fa-star" aria-hidden="true"></i></a>
+									<a href="<?php echo $url; ?>" class="gift"></a>
+									<a href="<?php echo $url; ?>" class="add-fav"><i class="fa fa-star" aria-hidden="true"></i></a>
 								</div>
 							</div>
 						</article>
-					</a>
+					
 				</div>
 			</div>
 
 			<?php for($i=1; $i<7; $i++){ ?>
 			<div class="grid-item">
 				<div class="club as-mais-itens">
-					<a href="#">
+					<a href="<?php echo $url; ?>/perfil">
 						<article class="item menu-club ">
 							<img src="assets/images/novidade.png" class="novidade" alt="" />
 							<img src="uploads/nossas-acompanhantes-0<?php echo $i; ?>.png" class="img-responsive" alt=""/>
@@ -98,7 +98,7 @@
 			<?php } ?>
 		</div>
 
-		<a href="#" title="VER MAIS ACOMPANHANTES" class="button mais-acompanhantes">VER MAIS ACOMPANHANTES</a>
+		<a href="<?php echo $url; ?>" title="VER MAIS ACOMPANHANTES" class="button mais-acompanhantes">VER MAIS ACOMPANHANTES</a>
 
 	</div>
 </section>
@@ -113,7 +113,7 @@
 			<img src="uploads/as-mais-do-club-01.png" class="img-responsive" alt=""/>
 			<span class="title">Bruna Blanco</span>
 			<div id="" class="overlay">
-			  <a href="#" class="see-more">Ver mais</a>
+			  <a href="<?php echo $url; ?>/perfil" class="see-more">Ver mais</a>
 			  <h2 class="title">Bruna Blanco</h2>
 			  <span class="local">Moema - São Paulo</span>
 			  <span class="rating clearfix">
@@ -124,8 +124,8 @@
 			<i class="fa fa-star-half" aria-hidden="true"></i>
 			  </span>
 			  <div id="" class="clearfix">
-			<a href="#" class="gift"></a>
-			<a href="#" class="add-fav"><i class="fa fa-star" aria-hidden="true"></i></a>
+			<a href="<?php echo $url; ?>" class="gift"></a>
+			<a href="<?php echo $url; ?>" class="add-fav"><i class="fa fa-star" aria-hidden="true"></i></a>
 			  </div>
 			</div>
 		  </article>
@@ -133,7 +133,7 @@
 			<img src="uploads/as-mais-do-club-02.png" class="img-responsive" alt=""/>
 			<span class="title">Bruna Blanco</span>
 			<div id="" class="overlay">
-			  <a href="#" class="see-more">Ver mais</a>
+			  <a href="<?php echo $url; ?>/perfil" class="see-more">Ver mais</a>
 			  <h2 class="title">Bruna Blanco</h2>
 			  <span class="local">Moema - São Paulo</span>
 			  <span class="rating clearfix">
@@ -144,8 +144,8 @@
 			<i class="fa fa-star-half" aria-hidden="true"></i>
 			  </span>
 			  <div id="" class="clearfix">
-			<a href="#" class="gift"></a>
-			<a href="#" class="add-fav"><i class="fa fa-star" aria-hidden="true"></i></a>
+			<a href="<?php echo $url; ?>" class="gift"></a>
+			<a href="<?php echo $url; ?>" class="add-fav"><i class="fa fa-star" aria-hidden="true"></i></a>
 			  </div>
 			</div>
 		  </article>
@@ -153,7 +153,7 @@
 			<img src="uploads/as-mais-do-club-03.png" class="img-responsive" alt=""/>
 			<span class="title">Bruna Blanco</span>
 			<div id="" class="overlay">
-			  <a href="#" class="see-more">Ver mais</a>
+			  <a href="<?php echo $url; ?>/perfil" class="see-more">Ver mais</a>
 			  <h2 class="title">Bruna Blanco</h2>
 			  <span class="local">Moema - São Paulo</span>
 			  <span class="rating clearfix">
@@ -164,8 +164,8 @@
 			<i class="fa fa-star-half" aria-hidden="true"></i>
 			  </span>
 			  <div id="" class="clearfix">
-			<a href="#" class="gift"></a>
-			<a href="#" class="add-fav"><i class="fa fa-star" aria-hidden="true"></i></a>
+			<a href="<?php echo $url; ?>" class="gift"></a>
+			<a href="<?php echo $url; ?>" class="add-fav"><i class="fa fa-star" aria-hidden="true"></i></a>
 			  </div>
 			</div>
 		  </article>
@@ -173,7 +173,7 @@
 			<img src="uploads/as-mais-do-club-04.png" class="img-responsive" alt=""/>
 			<span class="title">Bruna Blanco</span>
 			<div id="" class="overlay">
-			  <a href="#" class="see-more">Ver mais</a>
+			  <a href="<?php echo $url; ?>/perfil" class="see-more">Ver mais</a>
 			  <h2 class="title">Bruna Blanco</h2>
 			  <span class="local">Moema - São Paulo</span>
 			  <span class="rating clearfix">
@@ -184,8 +184,8 @@
 			<i class="fa fa-star-half" aria-hidden="true"></i>
 			  </span>
 			  <div id="" class="clearfix">
-			<a href="#" class="gift"></a>
-			<a href="#" class="add-fav"><i class="fa fa-star" aria-hidden="true"></i></a>
+			<a href="<?php echo $url; ?>" class="gift"></a>
+			<a href="<?php echo $url; ?>" class="add-fav"><i class="fa fa-star" aria-hidden="true"></i></a>
 			  </div>
 			</div>
 		  </article>
@@ -193,7 +193,7 @@
 			<img src="uploads/as-mais-do-club-05.png" class="img-responsive" alt=""/>
 			<span class="title">Bruna Blanco</span>
 			<div id="" class="overlay">
-			  <a href="#" class="see-more">Ver mais</a>
+			  <a href="<?php echo $url; ?>/perfil" class="see-more">Ver mais</a>
 			  <h2 class="title">Bruna Blanco</h2>
 			  <span class="local">Moema - São Paulo</span>
 			  <span class="rating clearfix">
@@ -204,8 +204,8 @@
 			<i class="fa fa-star-half" aria-hidden="true"></i>
 			  </span>
 			  <div id="" class="clearfix">
-			<a href="#" class="gift"></a>
-			<a href="#" class="add-fav"><i class="fa fa-star" aria-hidden="true"></i></a>
+			<a href="<?php echo $url; ?>" class="gift"></a>
+			<a href="<?php echo $url; ?>" class="add-fav"><i class="fa fa-star" aria-hidden="true"></i></a>
 			  </div>
 			</div>
 		  </article>
@@ -213,7 +213,7 @@
 			<img src="uploads/as-mais-do-club-06.png" class="img-responsive" alt=""/>
 			<span class="title">Bruna Blanco</span>
 			<div id="" class="overlay">
-			  <a href="#" class="see-more">Ver mais</a>
+			  <a href="<?php echo $url; ?>/perfil" class="see-more">Ver mais</a>
 			  <h2 class="title">Bruna Blanco</h2>
 			  <span class="local">Moema - São Paulo</span>
 			  <span class="rating clearfix">
@@ -224,8 +224,8 @@
 			<i class="fa fa-star-half" aria-hidden="true"></i>
 			  </span>
 			  <div id="" class="clearfix">
-			<a href="#" class="gift"></a>
-			<a href="#" class="add-fav"><i class="fa fa-star" aria-hidden="true"></i></a>
+			<a href="<?php echo $url; ?>" class="gift"></a>
+			<a href="<?php echo $url; ?>" class="add-fav"><i class="fa fa-star" aria-hidden="true"></i></a>
 			  </div>
 			</div>
 		  </article>
@@ -244,14 +244,14 @@
 					<article class="item">
 						<header>
 							<strong>Nome</strong>
-							<a href="#" title="">@Username</a>
-							<a href="#" class="ico-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href="<?php echo $url; ?>" title="">@Username</a>
+							<a href="<?php echo $url; ?>" class="ico-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 						</header>
 						<h3>Este é um exemplo de Tweet com 140 caracteres. Adipiscing elit. Cras trisique ac tortor facilisis posuere. In seper sit ametlectus. #Hashtag</h3>
 						<footer>
-							<a href="#"><i class="fa fa-retweet" aria-hidden="true"></i></a>
-							<a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
-							<a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a>
+							<a href="<?php echo $url; ?>"><i class="fa fa-retweet" aria-hidden="true"></i></a>
+							<a href="<?php echo $url; ?>"><i class="fa fa-heart" aria-hidden="true"></i></a>
+							<a href="<?php echo $url; ?>"><i class="fa fa-reply" aria-hidden="true"></i></a>
 
 							<span class="date">21 de março de 2006</span>							
 						</footer>

@@ -1,0 +1,318 @@
+.header-perfil {	
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	.bg-header-perfil {
+		background: url('../images/bg-header-perfil.png') repeat-x left bottom; 
+		width: 100%;
+		padding: 45px 0;
+	}
+
+	h2.title {
+		font-size: 2.25rem;
+		font-weight: $bold;
+		margin-bottom: 15px;
+	}
+
+	.tel-perfil {
+		width: 220px;
+		height: 39px;
+		display: block;
+		margin: 0px auto 15px;
+		position: relative;
+		background-color: #151515;
+
+		.tel {
+			font-size: 1.125rem;
+			text-align: center;
+			display: block;
+			color: #ffffff;
+			line-height: 39px;
+
+			.fa {
+				color: #ffffff;
+				font-size: 1.125rem;
+				margin-right: 5px;
+			}
+		}
+
+		.ver-tel {
+			position: absolute;
+			top: 0px;
+			right: 0;
+			cursor: pointer;
+		}
+	}
+
+	p {
+		text-align: center;
+		color: #ffffff;
+		margin-bottom: 30px;
+	}
+
+	.test-drives {
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 30px;
+
+		li {
+			display: inline-block;
+			color: #ffffff;
+			border: 1px solid #ffffff;
+			border-left: none;
+			line-height: 38px;
+			padding: 0 10px;
+			margin-left: -3px;
+
+			strong	{
+				color: #ffffff;
+			}
+
+			&.title {
+				margin-left: 0px;
+				border-left: 1px solid #ffffff;
+				color: #151515;
+				background-color: #ffffff;
+				font-weight: $bold;
+			}
+		}
+	}
+
+	.rating {
+		text-align: center;
+		display: block;
+
+		.fa {
+			color: #ffffff;
+			font-size: 2rem;
+			margin: 0 5px 5px;
+		}
+
+		.tit-avaliacao {
+			display: block;
+			color: #888c88;
+		}
+	}
+
+	.container {
+
+	}
+}
+
+.perfil-acompanhantes {
+	.bg-fotos {
+		background-color: #212221;
+		margin-bottom: 30px;
+	}
+
+	#active-foto {
+		padding: 0 40px;
+		width: 100%;
+		@include box-sizing;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.perfil-fotos {
+		position: initial; 
+		padding: 0 40px;
+		width: 100%;
+		@include box-sizing;
+
+		.owl-item {
+			cursor: pointer;
+			img {
+				@include animacao;
+				@include grayscale(100%);
+			}
+
+			&:hover, .active-foto {
+				img {
+					@include grayscale(0%);
+				}
+			}
+
+			.item {
+				position: relative;
+
+				.img-blocked {
+					background: url('../images/foto-vip.png') no-repeat center;
+					position: absolute;
+					z-index: 999;
+					width: 100%;
+					height: 100%;
+					top: 0;
+				}
+
+				&.blocked {
+					img {
+						@include blur-grayscale(2px,100%);
+					}
+
+					.label-blocked {
+						display: none;
+						position: absolute;
+						z-index: 999;
+						width: 100%;
+						top: 0;
+					}
+				}
+			}
+		}
+
+		.owl-nav {
+			.owl-prev, .owl-next {
+				top: -385px;
+				.fa {
+					font-size: 1.25rem;
+				}
+			} 
+
+			.owl-next {
+				right: 51px;
+			}
+
+			.owl-prev {
+				left: -29px;
+			}
+		}
+	}
+
+	.nav-tabs {
+		border-bottom: 1px solid #888c88;
+
+		li {
+			a {
+				border: 1px solid #888c88;
+				border-radius: 0px;
+				color: #888c88;
+				font-size: 1rem;
+				height: 46px;
+				line-height: 46px;
+				padding: 0 15px;
+				margin-right: 5px;
+
+				&:hover {
+					background-color: #ffffff;
+					color: #151515;
+					border-color: #ffffff;
+
+					.fa {
+						color: #151515;
+					}
+				}
+
+				.fa {
+					font-size: 1.25rem;
+					color: #888c88;
+					margin-right: 5px;
+					top: 2px;
+					position: relative;
+				}
+			}
+
+			&.ouvir-recado {
+				a {
+					padding-left: 47px;
+				}
+
+				.fa {
+					background-color: #888c88;
+					color: #151515;
+					padding: 0 11px;
+					line-height: 44px;
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+
+				&:hover {
+					.fa {
+						color: #ffffff;
+						background-color: #151515;
+					}
+				}
+			}
+
+			&.active {
+				a {
+					background-color: #ffffff;
+					color: #151515;
+					border-color: #ffffff;
+
+					.fa {
+						color: #151515;
+					}
+				}
+
+				&.ouvir-recado {
+					a {
+						.fa {
+							color: #ffffff;
+							background-color: #151515;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.tab-pane {
+		border: 1px solid #888c88;
+		clear: both;
+		border-top: 0;
+
+		.content-txt {
+			padding: 20px;
+		}
+	}
+
+	table {
+		margin-top: 30px;
+
+		tr {
+			th {
+				text-align: center;
+				padding: 10px 0;
+				border: 1px solid #888c88;
+				border-top: 0;
+				border-left: 0;
+				&:last-child {
+					border-right: 0;
+				}
+			}
+
+			&.tit-table {
+				th {
+					background-color: $pink;
+					color: #ffffff;
+					border: 0;
+				}
+			}
+
+			td {
+				padding: 2px 20px;
+				border-right: 1px solid #888c88;
+				&:last-child {
+					border-right: 0;
+				}
+			}
+
+			&.first {
+				td {
+					padding-top: 20px;
+				}
+			}
+
+			&.last {
+				td {
+					padding-bottom: 20px;
+				}
+			}
+		}
+	}
+}

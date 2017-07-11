@@ -6,30 +6,30 @@
 			</div>
 			<nav class="">
 				<ul class="">
-					<li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Sobre o site</a></li>
-					<li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Termos de Uso</a></li>
-					<li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Política de Privacidade</a></li>
-					<li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Dúvidas Frequentes</a></li>
-					<li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Contato</a></li>
+					<li><a href="<?php echo $url; ?>/sobre"><i class="fa fa-chevron-right" aria-hidden="true"></i>Sobre o site</a></li>
+					<li><a href="<?php echo $url; ?>/termos-de-uso"><i class="fa fa-chevron-right" aria-hidden="true"></i>Termos de Uso</a></li>
+					<li><a href="<?php echo $url; ?>/politica-de-privacidade"><i class="fa fa-chevron-right" aria-hidden="true"></i>Política de Privacidade</a></li>
+					<li><a href="<?php echo $url; ?>/duvidas-frequentes"><i class="fa fa-chevron-right" aria-hidden="true"></i>Dúvidas Frequentes</a></li>
+					<li><a href="<?php echo $url; ?>/contato"><i class="fa fa-chevron-right" aria-hidden="true"></i>Contato</a></li>
 				</ul>
 				<ul class="">
-					<li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Cadastre-se</a></li>
-					<li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>VIP Club</a></li>
-					<li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Acompanhantes</a></li>
+					<li><a href="<?php echo $url; ?>"><i class="fa fa-chevron-right" aria-hidden="true"></i>Cadastre-se</a></li>
+					<li><a href="<?php echo $url; ?>"><i class="fa fa-chevron-right" aria-hidden="true"></i>VIP Club</a></li>
+					<li><a href="<?php echo $url; ?>"><i class="fa fa-chevron-right" aria-hidden="true"></i>Acompanhantes</a></li>
 				</ul>
 				<ul class="">
-					<li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Ensaios</a></li>
-					<li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Anuncie</a></li>
-					<li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Blog</a></li>
-					<li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Contato</a></li>
+					<li><a href="<?php echo $url; ?>"><i class="fa fa-chevron-right" aria-hidden="true"></i>Ensaios</a></li>
+					<li><a href="<?php echo $url; ?>"><i class="fa fa-chevron-right" aria-hidden="true"></i>Anuncie</a></li>
+					<li><a href="<?php echo $url; ?>"><i class="fa fa-chevron-right" aria-hidden="true"></i>Blog</a></li>
+					<li><a href="<?php echo $url; ?>/contato"><i class="fa fa-chevron-right" aria-hidden="true"></i>Contato</a></li>
 				</ul>
 			
 				<div id="" class="ico-footer">
 					<img src="assets/images/site-blindado2.png" alt=""/>
 					<ul class="list-unstyled redes-sociais">
-						<li><a href="#" title=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-						<li><a href="#" title=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li><a href="#" title=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+						<li><a href="http://www.twitter.com" title=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="http://www.facebook.com" title=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="http://plus.google.com" title=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
 					</ul>	
 				</div>
 			</nav>
@@ -40,6 +40,6 @@
 <div class="copy">
 	<div id="" class="container">
 		<p class="text-copy">Copyright © 2017. Todos os direitos reservados</p>
-		<a href="#" target="_blank" title=""><img src="assets/images/icon-05.png" alt=""></a>
+		<a href="<?php echo $url; ?>" target="_blank" title=""><img src="assets/images/icon-05.png" alt=""></a>
 	</div>
 </div>

@@ -19,23 +19,26 @@ h2 {
 	line-height: 1.75rem;
 	font-weight: $regular;
 	color: $pink;
-	padding-bottom: 15px; 
-	position: relative;
 	text-align: center;
+
+	&:not(.title){
+		padding-bottom: 15px; 
+		position: relative;
+
+		&:after {
+			content: '';
+			width: 40px;
+			height: 4px;
+			position: absolute;
+			left: 50%;
+			bottom: 0px;
+			margin-left: -20px;
+			background-color: $pink;
+		}
+	}
 
 	strong, .fa {
 		color: $pink;
-	}
-
-	&:after {
-		content: '';
-		width: 40px;
-		height: 4px;
-		position: absolute;
-		left: 50%;
-		bottom: 0px;
-		margin-left: -20px;
-		background-color: $pink;
 	}
 
 	&.no-border {
@@ -49,6 +52,12 @@ h2 {
 	&.big-text {
 		font-size: 2.625rem;
 		line-height: 2.625rem;
+	}
+
+	&.title {
+		@include text(null, 42px, $pink, 400, uppercase);
+		display: table;
+		margin: 0px auto 30px;
 	}
 }
 

@@ -1,3 +1,12 @@
+<?php 
+	$dev = true;
+	if ($dev) :
+		$url = 'http://localhost/clubmodel';
+		else:
+			$url = 'http://clubmodel.projetosvp.com.br';
+	endif
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -48,37 +57,3 @@
 
 </head>
 <body class="<?php echo $body_class; ?>">
-
-
-
-
-
-
-
-
-
-<?php /*
-
-
-
-
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-	<meta charset="UTF-8"/>
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-
-	<title><?php echo $page_title; ?></title>
-	<meta name="description" content=""/>
-	<link rel="shortcut icon" href="assets/images/favicon.png">
-
-	<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Lato:300,300i,400,700" rel="stylesheet">
-
-	<!--[if lt IE 9]><script src="assets/plugins/html5shiv/html5shiv.min.js" type="text/javascript"></script><![endif]--> 
-	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-	<link href="assets/plugins/owl-carousel/assets/owl.carousel.min.css" rel="stylesheet" type="text/css"/>
-	<link href="assets/css/styles.css" rel="stylesheet" type="text/css"/>
-  </head>
-  <body class="<?= $body_class; ?>">
-
-  */ ?>

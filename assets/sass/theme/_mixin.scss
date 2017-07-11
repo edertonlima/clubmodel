@@ -22,6 +22,22 @@
     filter:#{"grayscale(#{$value})"};
 }
 
+@mixin blur($value) {
+	-webkit-filter: blur($value);
+	-moz-filter: blur($value);
+	-o-filter: blur($value);
+	-ms-filter: blur($value);
+	filter: blur($value);
+}
+
+@mixin blur-grayscale($blur,$grayscale) {
+	-webkit-filter: blur($blur) grayscale($grayscale);
+	-moz-filter: blur($blur) grayscale($grayscale);
+	-o-filter: blur($blur) grayscale($grayscale);
+	-ms-filter: blur($blur) grayscale($grayscale);
+	filter: blur($blur) grayscale($grayscale);
+}
+
 @mixin background-size($value) {
 	-webkit-background-size: $value;
 	-moz-background-size: $value;
